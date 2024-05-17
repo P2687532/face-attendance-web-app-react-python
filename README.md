@@ -19,7 +19,7 @@ Put this configuration into that file to replace the IP address with EC2 instanc
 
     server {
         listen 80;   
-        server_name <PUBLIC_IP>;    
+        server_name <TYPE_PUBLIC_IP>;    
         location / {        
             proxy_pass http://127.0.0.1:8000;    
         }
@@ -29,7 +29,7 @@ restart service nginx file to get updated file
 
     sudo service nginx restart
 
-Update EC2 security-group settings by cilck on the securiry button then add inbound rule to your instance to allow HTTP traffic to port 80.
+Update EC2 security-group settings by click on the security button then add inbound rule to your instance to allow HTTP traffic to port 80.
 
 ## Launch API endpoints of backend
 
