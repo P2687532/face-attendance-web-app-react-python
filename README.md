@@ -4,7 +4,7 @@ In Amazon EC2, launching a instance. Naming it to face-attendance-web-app-backen
 
 In the terminal, type this code
 
-    ssh -i ~/ <PATH_TO_KEY_PAIR> ubuntu <PUBLIC_IPv4_DNS>
+    ssh -i ~/ <PATH_TO_KEY_PAIR> ubuntu@ <PUBLIC_IPv4_DNS>
 
 SSH into the instance and run these commands to update the software repository and install the dependencies.
 
@@ -123,4 +123,4 @@ start
     
     npm start
 
-ou may need to adjust your browser to allow access to your webcam through an unsecure conection from the EC2 ip address. In chrome this setting is adjusted here __chrome://flags/#unsafely-treat-insecure-origin-as-secure__
+Need to adjust browser to allow access to webcam through an unsecure conection from the EC2 ip address. In chrome this setting is adjusted here __chrome://flags/#unsafely-treat-insecure-origin-as-secure__
